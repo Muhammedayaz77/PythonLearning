@@ -1,5 +1,5 @@
 # Store values in variables.
-studentNameStr = "Ayaz"
+studentNameStr = "YourName"
 studentIdInt = 7
 studentMarksFloat = 450.5
 isActiveBool = True
