@@ -1,7 +1,7 @@
 import sqlite3
 
 # Create or open the SQLite database.
-connectionObj = sqlite3.connect("test_DataBase.db")
+connectionObj = sqlite3.connect("python_learning.db")
 cursorObj = connectionObj.cursor()
 
 # Create the table if it does not already exist.
