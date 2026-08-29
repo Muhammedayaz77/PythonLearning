@@ -1,36 +1,21 @@
-from unittest import result
+# Get two numbers and an operator from the user.
+firstNumberFloat = float(input("Enter first number: "))
+operatorStr = input("Enter operator (+, -, *, /): ")
+secondNumberFloat = float(input("Enter second number: "))
 
-print("CALCULTOR")
-num1 = None
-num2 = None
-result = None
-
-
-num1 = float(input("Enter first number: "))
-oprator = input("Enter operator: ")
-num2 = float(input("Enter second number: "))
-
-if oprator == "+":
-    result = num1 + num2
-elif oprator == "-":
-    result = num1 - num2
-elif oprator == "*":
-    result = num1 * num2
-elif oprator == "/":
-    result = num1 / num2
+# Perform the selected calculation.
+if operatorStr == "+":
+    resultFloat = firstNumberFloat + secondNumberFloat
+elif operatorStr == "-":
+    resultFloat = firstNumberFloat - secondNumberFloat
+elif operatorStr == "*":
+    resultFloat = firstNumberFloat * secondNumberFloat
+elif operatorStr == "/":
+    if secondNumberFloat != 0:
+        resultFloat = firstNumberFloat / secondNumberFloat
+    else:
+        resultFloat = "Cannot divide by zero"
 else:
-    result = "invalid oprator"
+    resultFloat = "Invalid operator"
 
-print(result)
-
-
-
-
-
-
-
-
-
-
-
-
+print("Result:", resultFloat)
